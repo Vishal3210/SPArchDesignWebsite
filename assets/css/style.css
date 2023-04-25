@@ -261,7 +261,7 @@ a {
 
 /* Media queries for responsiveness */
 
-/* Tablet design */
+/* Tablet View */
 @media only screen and (max-width: 820px) {
     .nav {
         padding: 20px 0px;
@@ -301,4 +301,41 @@ a {
     transform: translateY(0%);
     pointer-events: all;
   }
+
+  .home-content-header {
+    font-size: 50px;
+  }
+  
+  .home-img {
+      bottom: 300px;
+      right: -100px;
+    }
+    
+    .home-img-border {
+        bottom: 290px;
+        right: -110px;
+    }
+    
+    .services-img {
+        display: none;
+    }
+    
+    .services-img-border {
+        display: none;
+    }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 450px) {
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .home-content-header {
+        font-size: 40px;
+    }
+
+    .home-content-para {
+        font-size: 14px;
+    }
 }
