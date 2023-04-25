@@ -249,6 +249,85 @@ a {
     overflow: hidden;
 }
 
+.services-content {
+    align-items: flex-start;
+    width: 70vw;
+}
+
+.services-content-header-section {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.services-content-subheader {
+    font-size: 14px;
+}
+
+.services-content-main-header-section {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.services-content-header {
+    font-size: 40px;
+}
+
+.services-content-view-all-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-content-view-all-button {
+    color: var(--primary-color);
+}
+
+.services-content-view-all-container > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+.services-content-view-all-container:hover > span {
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.services-content-data-section {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.services-content-data-card {
+    align-items: flex-start;
+    width: 400px;
+}
+
+.services-content-data-card-subheader {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.services-content-data-card-header {
+    font-size: 20px;
+    margin: 0px 0px 20px;
+}
+
+.services-content-data-card-header-img {
+    width: 30px;
+    height: 30px;
+}
+
+.services-content-data-para {
+    color: var(--secondary-color);
+}
+
 .services-img {
     bottom: calc(100% - 200px);
     right: -100px;
