@@ -46,3 +46,78 @@ ol {
 a {
   text-decoration: none;
 }
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Designing starts here */
+
+.nav {
+    position: fixed;
+    padding: 30px 0px;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.nav-shadow {
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo {
+    font-family: var(--logo-font);
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.nav-logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-link-button {
+    display: none;
+}
+
+.nav-link {
+    position: relative;
+    margin: 0px 20px;
+    overflow: hidden;
+}
+
+.nav-link > span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+
+.nav-link:hover > span {
+    transform: translateX(0%);
+}
+
+.link-active > span {
+    transform: translateX(0%);
+}
+
+.nav-link-anchor {
+    color: var(--primary-color);
+}
