@@ -4,7 +4,6 @@ const navLinkButton = document.querySelector(".nav-link-button");
 
 document.addEventListener("scroll", (e) => {
     const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    console.log(scrollTop)
     if(scrollTop > 0) {
       navBar.classList.add("nav-shadow");
     }
