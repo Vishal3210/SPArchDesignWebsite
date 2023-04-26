@@ -108,6 +108,7 @@ a {
   position: relative;
   margin: 0px 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .nav-link > span {

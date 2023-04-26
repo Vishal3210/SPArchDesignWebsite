@@ -37,9 +37,6 @@ const scrollTracker = () => {
     //     servicesNavLink.classList.remove('link-active');
     //     aboutNavLink.classList.remove('link-active');
     // }
-    console.log("ScrollTop: " + scrollTop);
-    console.log("HomeOffset: " + homeOffset);
-    console.log("ServicesOffset: " + servicesOffset);
     if (scrollTop > servicesOffset) {
         aboutNavLink.classList.add('link-active');
         homeNavLink.classList.remove('link-active');
