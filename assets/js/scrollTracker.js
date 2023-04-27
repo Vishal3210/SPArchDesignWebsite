@@ -8,6 +8,8 @@ const servicesHeight = services.offsetHeight;
 // const aboutHeight = about.offsetHeight;
 // const contactHeight = contact.offsetHeight;
 
+const navLinkArray = document.querySelectorAll('.nav-link');
+
 const homeNavLink = document.querySelector('.home-nav-link');
 const servicesNavLink = document.querySelector('.services-nav-link');
 const aboutNavLink = document.querySelector('.about-nav-link');
@@ -24,6 +26,17 @@ const getOffsetTop = (e) => {
       return offsetTop;
 }
 
+const toggleActiveLink = (target) => {
+    navLinkArray.forEach((link) => {
+        if(link === target) {
+            link.classList.add('link-active');
+        }
+        else {
+            link.classList.remove('link-active');
+        }
+    });
+}
+
 const scrollTracker = () => {
     const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     const homeOffset = getOffsetTop(home) + homeHeight;
@@ -32,28 +45,16 @@ const scrollTracker = () => {
     // const contactOffset = getOffsetTop(contact) + contactHeight;
 
     // if (scrollTop > aboutOffset) {
-    //     contactNavLink.classList.add('link-active');
-    //     homeNavLink.classList.remove('link-active');
-    //     servicesNavLink.classList.remove('link-active');
-    //     aboutNavLink.classList.remove('link-active');
+    //     toggleActiveLink(contactNavLink);
     // }
     if (scrollTop > servicesOffset) {
-        aboutNavLink.classList.add('link-active');
-        homeNavLink.classList.remove('link-active');
-        servicesNavLink.classList.remove('link-active');
-        contactNavLink.classList.remove('link-active');
+        toggleActiveLink(aboutNavLink);
     }
     else if (scrollTop > homeOffset) {
-        servicesNavLink.classList.add('link-active');
-        homeNavLink.classList.remove('link-active');
-        aboutNavLink.classList.remove('link-active');
-        contactNavLink.classList.remove('link-active');
+        toggleActiveLink(servicesNavLink);
     }
     else {
-        homeNavLink.classList.add('link-active');
-        servicesNavLink.classList.remove('link-active');
-        aboutNavLink.classList.remove('link-active');
-        contactNavLink.classList.remove('link-active');
+        toggleActiveLink(homeNavLink);
     }
 }
 
