@@ -32,8 +32,6 @@ const shiftActiveDot = (index) => {
 const shiftDataCard = (index) => {
     dataCards.forEach((card, idx) => {
         card.style.opacity = '0';
-        console.log('idx: ' + idx);
-        console.log('index: ' + index);
         if (idx < index) {
             card.style.transform = `translate(-${100 * (index - idx)}, -100%)`;
         }
@@ -47,11 +45,31 @@ const shiftDataCard = (index) => {
     });
 }
 
-// const autoSlideDataCard = () => {
-//     for 
-// }
+const autoSlider = () => {
+    for (let i = 0 ; i < dotNavs.length ; i++) {
+        let dot = dotNavs[i];
+        if (activeDot.style.top == dot.style.top){
+            let activeDotIndex = dot.id;
+            let nextDotIndex = parseInt(activeDotIndex) + 1;
+            nextDotIndex = nextDotIndex >= dotNavs.length ? 0 : nextDotIndex;
+            shiftActiveDot(nextDotIndex);
+            shiftDataCard(nextDotIndex);
+            break;
+        }
+    }
+}
+
+let autoSlideTimer = false;
+const setAutoSlideTimeInterval = () => {
+    autoSlideTimer = setInterval(autoSlider, 5000);
+}
+
+const clearAutoSlideTimeInterval = () => {
+    clearInterval(autoSlideTimer);
+}
 
 prev.addEventListener('click', () => {
+    clearAutoSlideTimeInterval();
     let i = 0;
 
     for (i = 0 ; i < dotNavs.length ; i++) {
@@ -62,12 +80,14 @@ prev.addEventListener('click', () => {
             prevDotIndex = prevDotIndex < 0 ? dotNavs.length - 1 : prevDotIndex;
             shiftActiveDot(prevDotIndex);
             shiftDataCard(prevDotIndex);
+            setAutoSlideTimeInterval();
             break;
         }
     }
 });
 
 next.addEventListener('click', () => {
+    clearAutoSlideTimeInterval();
     let i = 0;
 
     for (i = 0 ; i < dotNavs.length ; i++) {
@@ -78,6 +98,7 @@ next.addEventListener('click', () => {
             nextDotIndex = nextDotIndex >= dotNavs.length ? 0 : nextDotIndex;
             shiftActiveDot(nextDotIndex);
             shiftDataCard(nextDotIndex);
+            setAutoSlideTimeInterval();
             break;
         }
     }
@@ -91,12 +112,14 @@ const dotNavs = document.querySelectorAll('.dotNavItem');
 
 dotNavs.forEach((dot) => {
     dot.addEventListener('click', () => {
+        clearAutoSlideTimeInterval();
         shiftActiveDot(dot.id);
         shiftDataCard(dot.id);
+        setAutoSlideTimeInterval();
     });
 });
 
 let activeDotTopValue = dotNavs[0].style.top;
 setActiveDotTopValue(activeDotTopValue);
 
-// navButtonDisplayToggle();
+setAutoSlideTimeInterval();
