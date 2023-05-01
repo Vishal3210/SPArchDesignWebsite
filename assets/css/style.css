@@ -256,11 +256,12 @@ a {
     width: 100%;
     align-items: flex-start;
     margin-bottom: 30px;
-    padding-right: 3%;
+    padding-right: 4.5%;
     padding-left: 6%;
 }
 
 .services-content-subheader {
+    color: var(--secondary-color);
     font-size: 14px;
 }
 
@@ -420,23 +421,77 @@ a {
     right: -110px;
 }
 
-.services-footer {
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: var(--secondary-background-color);
-}
-
 /* ---------------------About------------------------- */
 
 .about {
     background-color: var(--secondary-background-color);
 }
 
-/* .about-content {
-    
-} */
+.about-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.about-content-main-content {
+    width: 50%;
+    padding: 0 5%;
+    align-items: flex-start;
+}
+
+.about-content-subheader {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.about-content-main-header-section {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-content-header {
+    font-size: 40px;
+}
+
+.about-content-para {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.download-portfolio-button {
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.download-portfolio-button img {
+    width: 20px;
+}
+
+.about-content-carousel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    right: 0;
+
+}
+
+.about-content-carousel-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.carousel-img-active {
+    opacity: 1;
+}
 
 /* Media queries for responsiveness */
 
@@ -524,11 +579,6 @@ a {
     .services-img-border {
         display: none;
     }
-    
-    .services-footer {
-        display: none;
-    }
-    
 }
 
 /* Mobile View */
