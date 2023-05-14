@@ -5,7 +5,7 @@ const contact = document.getElementById("contact-content");
 
 const homeHeight = home.offsetHeight;
 const servicesHeight = services.offsetHeight;
-// const aboutHeight = about.offsetHeight;
+const aboutHeight = about.offsetHeight;
 // const contactHeight = contact.offsetHeight;
 
 const navLinkArray = document.querySelectorAll('.nav-link');
@@ -41,13 +41,13 @@ const scrollTracker = () => {
     const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     const homeOffset = getOffsetTop(home) + homeHeight;
     const servicesOffset = getOffsetTop(services) + servicesHeight;
-    // const aboutOffset = getOffsetTop(about) + aboutHeight;
+    const aboutOffset = getOffsetTop(about) + aboutHeight;
     // const contactOffset = getOffsetTop(contact) + contactHeight;
 
-    // if (scrollTop > aboutOffset) {
-    //     toggleActiveLink(contactNavLink);
-    // }
-    if (scrollTop > servicesOffset) {
+    if (scrollTop > aboutOffset) {
+        toggleActiveLink(contactNavLink);
+    }
+    else if (scrollTop > servicesOffset) {
         toggleActiveLink(aboutNavLink);
     }
     else if (scrollTop > homeOffset) {
