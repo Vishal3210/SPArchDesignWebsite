@@ -652,6 +652,13 @@ a {
   padding: 10px 0;
 }
 
+/* New page designs */
+
+.nav-back-button {
+  cursor: pointer;
+  font-size: 18px;
+}
+
 /* Media queries for responsiveness */
 
 /* Small Laptop View */
