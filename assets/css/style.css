@@ -580,6 +580,7 @@ a {
 .contact {
   background-color: black;
   color: white;
+  position: relative;
 }
 
 .contact-content {
@@ -640,6 +641,15 @@ a {
 
 .follow-link a {
   color: white;
+}
+
+.contact-footer {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* Media queries for responsiveness */
