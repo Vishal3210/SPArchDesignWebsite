@@ -652,11 +652,86 @@ a {
   padding: 10px 0;
 }
 
-/* New page designs */
+/* --------------------------New page design--------------------------- */
 
 .nav-back-button {
   cursor: pointer;
   font-size: 18px;
+}
+
+/* -------------------------About Page---------------------------------- */
+
+.about-head-section {
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.about-head-section-img-container {
+  width: 20%;
+  height: 60%;
+  position: relative;
+}
+
+.about-head-section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-head-section-img-design {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+
+.img-design-one {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translate(-20%, -20%);
+}
+
+.img-design-two {
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: translate(20%, 20%);
+}
+
+.about-head-section-quote-container {
+  align-items: flex-start;
+}
+
+.quote-sign {
+  font-size: 70px;
+  color: greenyellow;
+}
+
+.quote {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.quote-ref {
+  font-weight: bold;
+}
+
+.about-us-section {
+  padding: 20px 40px;
+}
+
+.about-us-section-header {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-us-section-para {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.about-card-section {
+  padding: 20px;
 }
 
 /* Media queries for responsiveness */
@@ -670,6 +745,14 @@ a {
   .founder {
     width: 420px;
     height: 560px;
+  }
+
+  .quote-sign {
+    font-size: 60px;
+  }
+
+  .quote {
+    font-size: 25px;
   }
 }
 
