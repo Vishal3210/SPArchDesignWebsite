@@ -810,6 +810,88 @@ a {
   text-align: justify;
 }
 
+.design-process-section {
+  padding: 20px 40px;
+}
+
+.design-process-header-section {
+  margin-bottom: 20px;
+}
+
+.design-process-subheader {
+  font-size: 14px;
+}
+
+.design-process-header {
+  font-size: 30px;
+}
+
+.design-process {
+  position: relative;
+  width: 100%;
+}
+
+.design-process::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  background-color: green;
+  transform: translateX(-50%);
+}
+
+.design-process-left {
+  align-items: flex-end;
+}
+
+.design-process-right {
+  align-items: flex-start;
+}
+
+.design-process-left, .design-process-right {
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.design-process-card {
+  margin-bottom: 100px;
+  width: 60%;
+}
+
+.design-process-right > .design-process-card:nth-child(3) ,.design-process-card:nth-child(4) {
+  margin-bottom: 10px;
+}
+
+.design-process-card-header-section {
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.design-process-card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+.design-process-card-header {
+  font-size: 20px;
+}
+
+.design-process-card-content-para {
+  font-size: 14px;
+  text-align: justify;
+}
+
 /* Media queries for responsiveness */
 
 /* Small Laptop View */
@@ -833,6 +915,10 @@ a {
 
   .about-card-section {
     gap: 50px;
+  }
+
+  .design-process-card {
+    width: 80%;
   }
 }
 
@@ -1017,8 +1103,20 @@ a {
     padding: 15px 20px;
   }
 
+  .why-choose-us-main-content {
+    gap: 30px;
+  }
+
   .why-choose-us-card {
-    width: 80%;
+    width: 90%;
+  }
+
+  .design-process {
+    padding: 20px 0;
+  }
+
+  .design-process-card {
+    width: 100%;
   }
 }
 
@@ -1101,5 +1199,37 @@ a {
   .why-choose-us-card {
     width: 100%;
     padding: 20px;
+  }
+
+  .why-choose-us-main-content {
+    gap: 20px;
+  }
+
+  .design-process-section {
+    padding: 20px;
+  }
+
+  .design-process-left, .design-process-right {
+    padding: 20px 10px;
+  }
+
+  .design-process-card-header-section {
+    gap: 5px;
+  }
+
+  .design-process-card-number {
+    /* font-size: 10px;
+    width: 20px;
+    height: 20px; */
+    display: none;
+  }
+
+  .design-process-card-header {
+    font-size: 14px;
+    /* word-break: break-all; */
+  }
+
+  .design-process-card-content-para {
+    font-size: 10px;
   }
 }
