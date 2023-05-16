@@ -896,6 +896,32 @@ a {
   .location, .follow {
     width: 100%;
   }
+
+  .about-head-section {
+    position: relative;
+  }
+
+  .about-head-section-img-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: -1;
+  }
+
+  .about-head-section-quote-container {
+    padding: 10px;
+    background-color: white;
+  }
+
+  .quote-sign {
+    font-size: 50px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
 }
 
 /* Mobile View */
@@ -964,5 +990,9 @@ a {
   .map-iframe {
     width: 300px;
     height: 400px;
+  }
+
+  .about-head-section-img-container {
+    width: 65%;
   }
 }
