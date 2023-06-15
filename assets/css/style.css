@@ -621,6 +621,10 @@ a {
   font-weight: bold;
 }
 
+.location-follow-container {
+  align-items: flex-start;
+}
+
 .location {
   margin-bottom: 40px;
 }
@@ -720,9 +724,26 @@ a {
   padding: 20px 40px;
 }
 
+.about-us-section-subheader {
+  font-size: 14px;
+}
+
 .about-us-section-header {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 20px;
+}
+
+.about-us-section-content {
+  width: 50%;
+  padding: 0 40px;
+  align-items: flex-start;
+}
+
+.about-us-section-img {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .about-us-section-para {
@@ -742,11 +763,12 @@ a {
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  align-items: flex-start;
+  justify-content: space-between;
   border-top: 2px solid greenyellow;
 }
 
 .about-card-header-section {
+  width: 100%;
   align-items: flex-start;
   margin-bottom: 10px;
 }
@@ -755,13 +777,18 @@ a {
   font-size: 25px;
 }
 
+
 .about-card-content-para {
   font-size: 14px;
   text-align: justify;
 }
 
+.about-card-animation {
+  width: 30%;
+}
+
 .why-choose-us-section {
-  padding: 20px 40px;
+  padding: 135px 40px 0px;
 }
 
 .why-choose-us-header-section {
@@ -811,7 +838,7 @@ a {
 }
 
 .design-process-section {
-  padding: 20px 40px;
+  padding: 135px 40px 20px;
 }
 
 .design-process-header-section {
@@ -877,6 +904,7 @@ a {
   font-size: 14px;
   width: 35px;
   height: 35px;
+  line-height: 35px;
   border-radius: 50%;
   background-color: teal;
   color: white;
@@ -1184,12 +1212,24 @@ a {
   }
 
   .map-iframe {
-    width: 300px;
+    width: 100%;
     height: 400px;
   }
 
   .about-head-section-img-container {
     width: 65%;
+  }
+
+  .about-card {
+    flex-direction: column;
+  }
+
+  .about-card-primary-content {
+    width: 100%;
+  }
+
+  .about-card-animation {
+    width: 40%;
   }
 
   .why-choose-us-section {

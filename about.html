@@ -20,11 +20,30 @@
           Arch & Design
         </p>
       </a>
-      <a href="." class="nav-back-button">
+      <!-- <a href="." class="nav-back-button">
         <i class="fa-solid fa-left-long"></i>
-      </a>
+      </a> -->
+      <div class="nav-link-button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="break"></div>
+      <ul class="nav-link-container flex">
+        <li class="nav-link anchor-design home-nav-link link-active">
+          <a data-link="home" class="nav-link-anchor">Home</a><span></span>
+        </li>
+        <li class="nav-link anchor-design brief-nav-link">
+          <a data-link="brief" class="nav-link-anchor">Brief</a><span></span>
+        </li>
+        <li class="nav-link anchor-design advantages-nav-link">
+          <a data-link="advantages" class="nav-link-anchor">Advantages</a><span></span>
+        </li>
+        <li class="nav-link anchor-design execution-nav-link">
+          <a data-link="execution" class="nav-link-anchor">Execution</a
+          ><span></span>
+        </li>
+      </ul>
     </nav>
-    <div class="about-head-section flex flex-row">
+    <div class="about-head-section flex flex-row" id="home">
       <div class="about-head-section-img-container">
         <img
           src="assets/images/aboutHeadImg.jpg"
@@ -53,27 +72,36 @@
         <p class="quote-ref">~ Steve Jobs</p>
       </div>
     </div>
-    <div class="about-us-section flex flex-col">
-      <h1 class="about-us-section-header">About Us</h1>
-      <p class="about-us-section-para para-color">
-        Welcome to S|P Arch and Design, where we believe that great design has
-        the power to transform lives. Our team is passionate about creating
-        beautiful, functional spaces that reflect the unique style and needs of
-        our clients. At S|P Arch and Design, we understand that the process of
-        designing a space can be overwhelming. That's why we work closely with
-        our clients to guide them through every step of the design process, from
-        initial concept to final installation. We are skilled at listening to
-        our clients' needs and desires, and translating them into cohesive,
-        stylish designs. Our design philosophy is rooted in the belief that a
-        space should be both beautiful and functional. We believe that great
-        design is not just about aesthetics, but also about how a space feels
-        and functions. That's why we take a holistic approach to every project,
-        considering everything from traffic flow and lighting to color and
-        texture. We believe that everyone deserves to live in a space that
-        reflects their unique style and enhances their quality of life. That's
-        why we offer a range of design services to meet the needs of our
-        clients, from full-scale interior design to custom furniture and decor.
-      </p>
+    <div class="about-us-section section flex flex-row" id="brief">
+      <img
+        src="assets/images/aboutUsSectionImg.jpg"
+        alt="aboutUsSectionImg"
+        class="about-us-section-img"
+      />
+      <div class="about-us-section-content flex flex-col">
+        <p class="about-us-section-subheader para-color">BRIEF</p>
+        <h1 class="about-us-section-header">About Us</h1>
+        <p class="about-us-section-para para-color">
+          Welcome to S|P Arch and Design, where we believe that great design has
+          the power to transform lives. Our team is passionate about creating
+          beautiful, functional spaces that reflect the unique style and needs
+          of our clients. At S|P Arch and Design, we understand that the process
+          of designing a space can be overwhelming. That's why we work closely
+          with our clients to guide them through every step of the design
+          process, from initial concept to final installation. We are skilled at
+          listening to our clients' needs and desires, and translating them into
+          cohesive, stylish designs. Our design philosophy is rooted in the
+          belief that a space should be both beautiful and functional. We
+          believe that great design is not just about aesthetics, but also about
+          how a space feels and functions. That's why we take a holistic
+          approach to every project, considering everything from traffic flow
+          and lighting to color and texture. We believe that everyone deserves
+          to live in a space that reflects their unique style and enhances their
+          quality of life. That's why we offer a range of design services to
+          meet the needs of our clients, from full-scale interior design to
+          custom furniture and decor.
+        </p>
+      </div>
     </div>
     <div class="about-card-section flex flex-row">
       <div class="about-card flex flex-col">
@@ -121,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="why-choose-us-section flex flex-col">
+    <div class="why-choose-us-section section flex flex-col" id="advantages">
       <div class="why-choose-us-header-section flex flex-col">
         <p class="why-choose-us-subheader para-color">ADVANTAGES</p>
         <h1 class="why-choose-us-header">Why Choose Us</h1>
@@ -232,7 +260,7 @@
         </div>
       </div>
     </div>
-    <div class="design-process-section flex flex-col">
+    <div class="design-process-section flex flex-col" id="execution">
       <div class="design-process-header-section flex flex-col">
         <p class="design-process-subheader para-color">EXECUTION STEPS</p>
         <h1 class="design-process-header">Design Process</h1>
@@ -341,5 +369,7 @@
       </div>
     </div>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/aboutScrollTracker.js"></script>
+    <script src="assets/js/aboutScroller.js"></script>
   </body>
 </html>

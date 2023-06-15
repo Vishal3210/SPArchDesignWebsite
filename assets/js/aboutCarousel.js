@@ -3,7 +3,6 @@ const carouselImgs = document.querySelectorAll('.about-content-carousel-img');
 let index = 1;
 
 const carouselImgSelector = () => {
-    console.log(index);
     let i = 0;
     for (i ; i < carouselImgs.length ; i++) {
         if (i === index) {
