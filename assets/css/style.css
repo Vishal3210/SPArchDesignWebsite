@@ -777,14 +777,9 @@ a {
   font-size: 25px;
 }
 
-
 .about-card-content-para {
   font-size: 14px;
   text-align: justify;
-}
-
-.about-card-animation {
-  width: 30%;
 }
 
 .why-choose-us-section {
@@ -804,8 +799,46 @@ a {
 }
 
 .why-choose-us-main-content {
-  padding: 10px 0;
-  gap: 50px;
+  padding: 20px 30px;
+  width: 100%;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.why-choose-us-carousel {
+  position: relative;
+  width: calc((520px * 14));
+  align-items: flex-start;
+  justify-content: flex-start;
+  animation: scroll 20s linear infinite;
+}
+
+/* .why-choose-us-carousel::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+} */
+
+.why-choose-us-carousel:hover {
+  animation-play-state: paused;
+}
+
+.why-choose-us-carousel.no-transition {
+  transition: none;
 }
 
 .why-choose-us-card {
@@ -813,13 +846,18 @@ a {
   border-top: 2px solid green;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  width: 60%;
+  min-width: 500px;
+  margin-left: 20px;
   align-items: flex-start;
   cursor: pointer;
 }
 
+.why-choose-us-card:first-child {
+  margin: 0;
+}
+
 .why-choose-us-card-header-section {
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 10px;
 }
 
@@ -865,7 +903,7 @@ a {
   left: 50%;
   top: 0;
   bottom: 0;
-  background-color: green;
+  background-color: #b81924;
   transform: translateX(-50%);
 }
 
@@ -906,7 +944,7 @@ a {
   height: 35px;
   line-height: 35px;
   border-radius: 50%;
-  background-color: teal;
+  background-color: #426c95;
   color: white;
   text-align: center;
 }
@@ -945,8 +983,17 @@ a {
     gap: 50px;
   }
 
+  .why-choose-us-carousel {
+    width: calc((420px * 14));
+  }
+
+  .why-choose-us-card {
+    /* min-width: calc((100%/3) - 8px); */
+    min-width: 400px;
+  }
+
   .design-process-card {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1135,8 +1182,14 @@ a {
     gap: 30px;
   }
 
+  .why-choose-us-carousel {
+    width: calc((320px * 14));
+  }
+
   .why-choose-us-card {
-    width: 90%;
+    /* width: 90%; */
+    /* min-width: calc((100%/2) - 15px); */
+    min-width: 300px;
   }
 
   .design-process {
@@ -1236,9 +1289,28 @@ a {
     padding: 20px;
   }
 
+  .why-choose-us-main-content {
+    /* padding: 20px 15px; */
+    padding: 10px;
+  }
+
+  .why-choose-us-carousel {
+    width: calc(((100% + 20px) * 14));
+  }
+
   .why-choose-us-card {
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
+    /* min-width: 100%; */
+    min-width: calc((100% / 14) - 20px);
+  }
+
+  .green-tick {
+    font-size: 20px;
+  }
+
+  .why-choose-us-card-header {
+    font-size: 18px;
   }
 
   .why-choose-us-main-content {
