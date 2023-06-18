@@ -818,7 +818,6 @@ a {
 .why-choose-us-carousel {
   position: relative;
   width: calc((520px * 14));
-  align-items: flex-start;
   justify-content: flex-start;
   animation: scroll 20s linear infinite;
 }
@@ -847,6 +846,7 @@ a {
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   min-width: 500px;
+  min-height: 250px;
   margin-left: 20px;
   align-items: flex-start;
   cursor: pointer;
@@ -990,6 +990,7 @@ a {
   .why-choose-us-card {
     /* min-width: calc((100%/3) - 8px); */
     min-width: 400px;
+    min-height: 280px;
   }
 
   .design-process-card {
@@ -1190,6 +1191,7 @@ a {
     /* width: 90%; */
     /* min-width: calc((100%/2) - 15px); */
     min-width: 300px;
+    min-height: 400px;
   }
 
   .design-process {
@@ -1295,17 +1297,20 @@ a {
   }
 
   .why-choose-us-carousel {
-    width: calc(((100% + 20px) * 14));
+    /* width: calc(((100% + 20px) * 14)); */
+    width: calc(270px * 14);
   }
 
   .why-choose-us-card {
     /* width: 100%; */
     padding: 20px;
     /* min-width: 100%; */
-    min-width: calc((100% / 14) - 20px);
+    min-width: 250px;
+    min-height: 350px;
   }
 
   .green-tick {
+    display: none;
     font-size: 20px;
   }
 
