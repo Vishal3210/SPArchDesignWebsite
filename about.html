@@ -102,6 +102,10 @@
           meet the needs of our clients, from full-scale interior design to
           custom furniture and decor.
         </p>
+        <div class="about-us-section-continue-reading-container anchor-design">
+          <a class="about-us-section-anchor" onclick="continueReading()">Continue Reading</a>
+          <span></span>
+        </div>
       </div>
     </div>
     <div class="about-card-section flex flex-row">
@@ -483,6 +487,13 @@
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/aboutScrollTracker.js"></script>
     <script src="assets/js/aboutScroller.js"></script>
-    <!-- <script src="assets/js/aboutPageSlider.js"></script> -->
+    <script>
+      const aboutUsSectionPara = document.querySelector(".about-us-section-para");
+      const aboutUsSectionAnchorContainer = document.querySelector(".about-us-section-continue-reading-container");
+      const continueReading = (e) => {
+        aboutUsSectionAnchorContainer.classList.toggle("anchor-container-display");
+        aboutUsSectionPara.classList.toggle("para-display-full");
+      }
+    </script>
   </body>
 </html>

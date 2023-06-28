@@ -751,6 +751,10 @@ a {
   font-size: 14px;
 }
 
+.about-us-section-continue-reading-container {
+  display: none;
+}
+
 .about-card-section {
   padding: 20px 40px;
   justify-content: space-around;
@@ -1167,6 +1171,25 @@ a {
 
   .about-us-section {
     padding: 20px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .about-us-section-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    z-index: -1;
+    box-shadow: none;
+  }
+
+  .about-us-section-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    width: 90%;
   }
 
   .about-card-section {
@@ -1273,6 +1296,44 @@ a {
 
   .about-head-section-img-container {
     width: 65%;
+  }
+
+  .quote-sign {
+    display: none;
+  }
+
+  .about-us-section-content {
+    width: 100%;
+  }
+  
+  .about-us-section-para {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .para-display-full {
+    display: block;
+    overflow: auto;
+  }
+
+  .about-us-section-continue-reading-container {
+    display: block;
+    font-size: 10px;
+    margin: 10px 0 0;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .about-us-section-continue-reading-container a {
+    color: white;
+  }
+
+  .anchor-container-display {
+    display: none;
   }
 
   .about-card {
