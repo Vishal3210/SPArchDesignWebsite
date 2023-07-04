@@ -656,13 +656,6 @@ a {
   padding: 10px 0;
 }
 
-/* --------------------------New page design--------------------------- */
-
-.nav-back-button {
-  cursor: pointer;
-  font-size: 18px;
-}
-
 /* -------------------------About Page---------------------------------- */
 
 .about-head-section {
@@ -788,6 +781,7 @@ a {
 
 .why-choose-us-section {
   padding: 135px 40px 0px;
+  margin-bottom: 10px;
 }
 
 .why-choose-us-header-section {
@@ -922,6 +916,10 @@ a {
 .design-process-left, .design-process-right {
   width: 50%;
   padding: 20px 40px;
+}
+
+.design-process-mobile-view {
+  display: none;
 }
 
 .design-process-card {
@@ -1383,31 +1381,54 @@ a {
     gap: 20px;
   }
 
+  .design-process::after {
+    display: none;
+  }
+
   .design-process-section {
     padding: 20px;
   }
 
   .design-process-left, .design-process-right {
-    padding: 20px 10px;
-  }
-
-  .design-process-card-header-section {
-    gap: 5px;
-  }
-
-  .design-process-card-number {
-    /* font-size: 10px;
-    width: 20px;
-    height: 20px; */
     display: none;
   }
 
-  .design-process-card-header {
+  .design-process-mobile-view {
+    display: flex;
+    padding: 20px 10px;
+  }
+
+  .design-process-card {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid teal;
+  }
+
+  .design-process-card:nth-child(4) {
+    margin-bottom: 40px;
+  }
+
+  .design-process-card:nth-child(7) {
+    margin: 0;
+  }
+
+  .design-process-card-header-section {
+    gap: 10px;
+  }
+
+  .design-process-card-number {
     font-size: 14px;
-    /* word-break: break-all; */
+    width: 30px;
+    height: 30px;
+  }
+
+  .design-process-card-header {
+    font-size: 16px;
   }
 
   .design-process-card-content-para {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
