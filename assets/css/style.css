@@ -707,11 +707,12 @@ a {
 .quote {
   font-size: 30px;
   margin-bottom: 20px;
-}
-
-.quote-ref {
   font-weight: bold;
 }
+
+/* .quote-ref {
+  font-weight: bold;
+} */
 
 .about-us-section {
   padding: 20px 40px;
@@ -958,6 +959,114 @@ a {
 .design-process-card-content-para {
   font-size: 14px;
   text-align: justify;
+}
+
+/* ----------------------------Services Page---------------------------- */
+
+.service-head-section-content {
+  justify-content: space-around;
+}
+
+.service-head-section-img-container {
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.service-head-section-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.service-head-section-quote-container {
+  align-items: flex-start;
+}
+
+.service-head-section-quote-sign {
+  color: #b81924;
+  font-size: 40px;
+}
+
+.service-head-section-quote {
+  font-size: 40px;
+}
+
+/* .service-our-services-section {
+  margin-top: 70px;
+} */
+
+.service-our-services-section-content {
+  width: 100%;
+}
+
+.service-our-services-section-content-header {
+  font-size: 30px;
+}
+
+.service-our-services-section-content-subheader {
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.our-services-navigation-button {
+  font-size: 14px;
+  margin: 10px 10px 0px;
+  cursor: pointer;
+  color: gainsboro;
+  pointer-events: none;
+}
+
+.our-services-navigation-button.active {
+  color: black;
+  pointer-events: all;
+}
+
+.our-services-main-content-card-header-section {
+  padding: 10px 50px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.service-our-services-section-content-main-section {
+  position: relative;
+  width: 100%;
+}
+
+.our-services-main-content-card {
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.our-services-main-content-card.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.our-services-main-content-card-content {
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 50px;
+}
+
+.our-services-main-content-card-text-section {
+  align-items: flex-start;
+}
+
+.our-services-main-content-card-para {
+  text-align: justify;
+}
+
+.our-services-main-content-card-img {
+  width: 35%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); */
 }
 
 /* Media queries for responsiveness */
