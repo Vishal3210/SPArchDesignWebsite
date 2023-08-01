@@ -1123,6 +1123,11 @@ a {
   .design-process-card {
     width: 90%;
   }
+
+  .service-head-section-content {
+    padding: 0 20px;
+    gap: 20px;
+  }
 }
 
 /* Tablet View */
@@ -1347,6 +1352,14 @@ a {
   .design-process-card {
     width: 100%;
   }
+
+  .service-head-section-img-container {
+    display: none;
+  }
+
+  .service-head-section-quote-container {
+    width: 400px;
+  }
 }
 
 /* Mobile View */
@@ -1555,5 +1568,9 @@ a {
 
   .design-process-card-content-para {
     font-size: 14px;
+  }
+
+  .service-head-section-quote-container {
+    width: 250px;
   }
 }
