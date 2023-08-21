@@ -963,6 +963,10 @@ a {
 
 /* ----------------------------Services Page---------------------------- */
 
+.service-head-section {
+  margin-bottom: 100px;
+}
+
 .service-head-section-content {
   justify-content: space-around;
 }
@@ -993,11 +997,10 @@ a {
 
 .service-our-services-section {
   justify-content: flex-start;
-  padding-top: 85px;
-  margin-top: 50px;
 }
 
 .service-our-services-section-content {
+  padding-top: 150px;
   width: 100%;
 }
 
@@ -1103,7 +1106,7 @@ a {
 }
 
 .e-design-section-content-main-container {
-  width: 60%;
+  width: 50%;
   padding: 50px;
   align-items: flex-start;
 }
@@ -1125,7 +1128,7 @@ a {
 }
 
 .e-design-section-content-img-container {
-  width: 25%;
+  width: 30%;
   max-height: 100vh;
 }
 
@@ -1134,6 +1137,7 @@ a {
   height: 100%;
   object-fit: cover;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 .steps-section {
@@ -1429,18 +1433,38 @@ a {
     align-items: center;
   }
 
+  .our-services-main-content-card {
+    padding: 0;
+  }
+
+  .our-services-main-content-card-content {
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
   .our-services-main-content-card-img {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    z-index: -1;
+  }
+
+  .our-services-main-content-card-text-section {
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   }
 
   .e-design-section {
-    margin-top: 100px;
-    position: relative;
+    margin-top: 300px;
   }
   
   .e-design-section-content {
     min-height: 100vh;
     padding: 60px 50px;
+    position: relative;
   }
   
   .e-design-section-content-main-container {
@@ -1459,13 +1483,16 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
   }
 
   .e-design-section-content-img {
     min-height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0;
   }
 }
 
@@ -1681,32 +1708,39 @@ a {
     width: 250px;
   }
 
+  .our-services-main-content-card-content {
+    padding: 20px;
+  }
+
   .our-services-main-content-card-text-section {
     align-items: center;
+    padding: 20px;
   }
 
   .our-services-main-content-card-para {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .e-design-section {
-    margin-top: 500px;
+    margin-top: 400px;
   }
 
   .e-design-section-content {
-    padding: 20px 40px;
-  }
-
-  .e-design-section-content-main-container {
-    padding: 0;
-    box-shadow: 0px 0px;
+    padding: 20px;
+    position: relative;
   }
 
   .e-design-para {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .e-design-section-content-main-container {
+    padding: 20px;
   }
 
   .e-design-section-content-img-container {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
