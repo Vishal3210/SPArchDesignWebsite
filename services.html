@@ -31,20 +31,20 @@
         <li class="nav-link anchor-design home-nav-link link-active">
           <a data-link="about" class="nav-link-anchor">Home</a><span></span>
         </li>
-        <li class="nav-link anchor-design brief-nav-link">
+        <li class="nav-link anchor-design service-nav-link">
           <a data-link="brief" class="nav-link-anchor">Services</a><span></span>
         </li>
-        <li class="nav-link anchor-design advantages-nav-link">
+        <li class="nav-link anchor-design e-design-nav-link">
           <a data-link="advantages" class="nav-link-anchor">E-Design</a
           ><span></span>
         </li>
-        <li class="nav-link anchor-design execution-nav-link">
+        <li class="nav-link anchor-design steps-nav-link">
           <a data-link="execution" class="nav-link-anchor">Steps</a
           ><span></span>
         </li>
       </ul>
     </nav>
-    <section class="service-head-section section flex flex-col" id="service">
+    <section class="service-head-section section flex flex-col" id="home">
       <div class="service-head-section-content flex flex-row">
         <div class="service-head-section-img-container">
           <img
@@ -64,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="service-our-services-section section flex flex-col">
+    <section class="service-our-services-section section flex flex-col" id="service">
       <div class="service-our-services-section-content flex flex-col">
         <div
           class="service-our-services-section-content-header-section flex flex-col"
@@ -213,7 +213,7 @@
         </div>
       </div>
     </section>
-    <section class="e-design-section section flex flex-col">
+    <section class="e-design-section section flex flex-col" id="e-design">
       <div
         class="e-design-section-content section-content flex flex-row"
         id="e-design"
@@ -262,7 +262,29 @@
         </div>
       </div>
     </section>
+    <section class="steps-section section flex flex-col" id="steps">
+      <div class="steps-section-content section-content flex flex-col">
+        <div class="steps-section-content-header-section flex flex-col">
+          <p class="steps-subheader para-color">HOW IT WORKS</p>
+          <h1 class="steps-header">Steps to E-Design</h1>
+        </div>
+        <div class="steps-section-content-main-section">
+          <div class="steps-textbox">Click a tag to elaborate the step.</div>
+          <div class="steps-textbox">We begin with a virtual consultation where we discuss your design style, preferences, and goals for the space.</div>
+          <div class="steps-textbox">Based on our initial consultation, we create a design concept that includes a floor plan, color scheme, furniture selections, and decor recommendations.</div>
+          <div class="steps-textbox">We present the design concept to you via email or video call, and you have the opportunity to provide feedback and request revisions.</div>
+          <div class="steps-textbox">Once you are happy with the design concept, we provide you with a detailed shopping list and instructions on how to implement the design in your space.</div>
+          <div class="steps-textbox">We follow up with you to ensure that you are happy with the final result and offer additional support as needed.</div>
+          <p class="steps-tag"><span>1</span> Initial consultation</p>
+          <p class="steps-tag"><span>2</span> Design Concept</p>
+          <p class="steps-tag"><span>3</span> Design Presentation</p>
+          <p class="steps-tag"><span>4</span> Implementation</p>
+          <p class="steps-tag"><span>5</span> Follow-up</p>
+        </div>
+      </div>
+    </section>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/ourServicesPrevNext.js"></script>
+    <script src="assets/js/serviceScrollTracker.js"></script>
   </body>
 </html>
