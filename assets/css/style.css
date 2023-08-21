@@ -1396,8 +1396,6 @@ a {
   }
 
   .why-choose-us-card {
-    /* width: 90%; */
-    /* min-width: calc((100%/2) - 15px); */
     min-width: 300px;
     min-height: 400px;
   }
@@ -1446,6 +1444,10 @@ a {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   }
   
+  .e-design-para {
+    font-size: 14px;
+  }
+
   .e-design-section-content-img-container {
     position: absolute;
     top: 0;
@@ -1679,5 +1681,26 @@ a {
 
   .our-services-main-content-card-para {
     font-size: 14px;
+  }
+
+  .e-design-section {
+    margin-top: 500px;
+  }
+
+  .e-design-section-content {
+    padding: 20px 40px;
+  }
+
+  .e-design-section-content-main-container {
+    padding: 0;
+    box-shadow: 0px 0px;
+  }
+
+  .e-design-para {
+    font-size: 14px;
+  }
+
+  .e-design-section-content-img-container {
+    display: none;
   }
 }
