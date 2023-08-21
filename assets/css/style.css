@@ -993,7 +993,8 @@ a {
 
 .service-our-services-section {
   justify-content: flex-start;
-  padding-top: 135px;
+  padding-top: 85px;
+  margin-top: 50px;
 }
 
 .service-our-services-section-content {
@@ -1090,7 +1091,8 @@ a {
 }
 
 .e-design-section {
-  margin-top: 100px;
+  margin-top: 85px;
+  padding-top: 50px;
 }
 
 .e-design-section-content {
@@ -1132,6 +1134,10 @@ a {
   height: 100%;
   object-fit: cover;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.steps-section {
+  margin-top: 50px;
 }
 
 /* Media queries for responsiveness */
