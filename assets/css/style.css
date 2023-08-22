@@ -1418,8 +1418,18 @@ a {
     width: 100%;
   }
 
+  .service-head-section {
+    position: relative;
+    overflow: hidden;
+  }
+
   .service-head-section-img-container {
-    display: none;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: 170px;
+    z-index: -1;
+    transform: translateX(20%);
   }
 
   .service-head-section-quote-container {
