@@ -1144,6 +1144,38 @@ a {
   margin-top: 50px;
 }
 
+.steps-section-content-main-section {
+  position: relative;
+  margin-top: 50px;
+}
+
+.steps-textbox {
+  background-color: gainsboro;
+  min-height: 100px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.steps-text {
+  display: none;
+}
+
+.steps-text.default {
+  display: block;
+  text-align: center;
+}
+
+.steps-tag-container {
+  margin: 40px 0 0;
+  gap: 50px;
+}
+
+.steps-tag {
+  cursor: pointer;
+}
+
 /* Media queries for responsiveness */
 
 /* Small Laptop View */
