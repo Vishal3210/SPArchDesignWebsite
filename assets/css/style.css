@@ -1560,6 +1560,25 @@ a {
     object-fit: cover;
     border-radius: 0;
   }
+
+  .steps-section-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .steps-section-content-main-section {
+    margin-top: 20px;
+  }
+
+  .steps-tag-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .steps-textbox {
+    height: 300px;
+    overflow: scroll;
+  }
 }
 
 /* Mobile View */
