@@ -1142,10 +1142,24 @@ a {
 
 .steps-section {
   margin-top: 50px;
+  position: relative;
+}
+
+.steps-section-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.steps-section-content {
+  padding: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .steps-section-content-main-section {
-  position: relative;
   margin-top: 50px;
 }
 
@@ -1162,18 +1176,28 @@ a {
   display: none;
 }
 
-.steps-text.default {
+.steps-text.active {
   display: block;
   text-align: center;
 }
 
 .steps-tag-container {
-  margin: 40px 0 0;
-  gap: 50px;
+  margin: 50px 0 0;
+  gap: 30px;
 }
 
 .steps-tag {
+  position: relative;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px 25%;
+  background-color: lightgreen;
+  color: black;
+}
+
+.steps-tag.active {
+  background-color: green;
+  color: white;
 }
 
 /* Media queries for responsiveness */
