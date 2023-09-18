@@ -1570,14 +1570,36 @@ a {
     margin-top: 20px;
   }
 
-  .steps-tag-container {
-    flex-direction: column;
-    gap: 10px;
+  .steps-textbox, .steps-tag-container {
+    display: none;
   }
 
-  .steps-textbox {
-    height: 300px;
-    overflow: scroll;
+  .steps-section-content-main-section-short-view {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .steps-section-card {
+    width: 40%;
+  }
+
+  .steps-section-card-header {
+    font-size: 20px;
+  }
+
+  .steps-section-card-header > span {
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+  }
+
+  .steps-section-card-para {
+    font-size: 14px;
+    text-align: justify;
   }
 }
 
@@ -1827,5 +1849,9 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  .steps-section-card {
+    width: 100%;
   }
 }
