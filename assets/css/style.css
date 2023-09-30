@@ -1096,6 +1096,7 @@ a {
 .e-design-section {
   margin-top: 85px;
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .e-design-section-content {
@@ -1141,7 +1142,7 @@ a {
 }
 
 .steps-section {
-  margin-top: 50px;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -1198,6 +1199,10 @@ a {
 .steps-tag.active {
   background-color: green;
   color: white;
+}
+
+.steps-section-content-main-section-short-view {
+  display: none;
 }
 
 /* Media queries for responsiveness */
@@ -1575,6 +1580,7 @@ a {
   }
 
   .steps-section-content-main-section-short-view {
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 30px;
