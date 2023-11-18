@@ -575,6 +575,51 @@ a {
   filter: brightness(40%);
 }
 
+/* -----------------Testimonial---------------------- */
+
+.testimonial-content {
+  height: 100vh;
+}
+
+.testimonial-content-main-header-section {
+  margin: 30px;
+}
+
+.testimonial-content-subheader {
+  font-size: 14px;
+}
+
+.testimonial-content-header {
+  font-size: 40px;
+}
+
+.testimonial-content-main-section {
+  padding: 10px 20px;
+}
+
+.testimonial-card-section {
+  gap: 20px;
+  text-align: justify;
+}
+
+.testimonial-card {
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  min-height: 100%;
+}
+
+.testimonial-quote-sign {
+  color: yellowgreen;
+  font-size: 35px;
+}
+
+.testimonial-person-name {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
 /* -----------------Contact-------------------------- */
 
 .contact {
