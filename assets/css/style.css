@@ -1428,6 +1428,18 @@ a {
     margin-bottom: 20px;
   }
 
+  .testimonial-card-section {
+    flex-direction: column;
+  }
+
+  .testimonial-quote-sign {
+    font-size: 25px;
+  }
+
+  .testimonial-card-para {
+    font-size: 14px;
+  }
+
   .contact-content {
     padding: 100px 0;
     flex-direction: column;
@@ -1722,6 +1734,18 @@ a {
 
   .founder-content {
     font-size: 9px;
+  }
+
+  .testimonial-content-main-header-section {
+    margin-bottom: 10px;
+  }
+
+  .testimonial-card-para {
+    font-size: 12px;
+  }
+
+  .testimonial-person-name {
+    margin-top: 10px;
   }
 
   .contact-content {
