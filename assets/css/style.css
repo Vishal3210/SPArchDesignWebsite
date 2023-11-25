@@ -578,7 +578,7 @@ a {
 /* -----------------Testimonial---------------------- */
 
 .testimonial-content {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .testimonial-content-main-header-section {
@@ -610,14 +610,30 @@ a {
 }
 
 .testimonial-quote-sign {
-  color: yellowgreen;
+  color: green;
   font-size: 35px;
 }
 
-.testimonial-person-name {
+.testimonial-person-section {
   margin-top: 20px;
   text-align: center;
+}
+
+.testimonial-person-name {
   font-weight: bold;
+}
+
+.testimonial-person-rating {
+  color: gold;
+}
+
+.testimonial-person-site-location {
+  font-size: 14px;
+  color: grey;
+}
+
+.testimonial-person-site-location i {
+  color: black;
 }
 
 /* -----------------Contact-------------------------- */
@@ -1426,6 +1442,10 @@ a {
 
   .contact-ref-container {
     margin-bottom: 20px;
+  }
+
+  .testimonial-content {
+    margin-bottom: 40px;
   }
 
   .testimonial-card-section {
