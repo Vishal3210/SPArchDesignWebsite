@@ -16,7 +16,7 @@ const showPictures = (idx) => {
         
         case 1:
             folder = "achrekar";
-            maxLen = 15;
+            maxLen = 14;
             break;
         
         case 2:
@@ -29,9 +29,15 @@ const showPictures = (idx) => {
         let image = document.createElement('img');
         image.className = "testimonial-modal-image";
         image.src = defaultPath + folder + "/" + i + ".jpg";
-        console.log(image.src);
         modal.appendChild(image);
     }
+}
+
+const removePictures = () => {
+    const testimonialModalImages = document.querySelectorAll(".testimonial-modal-image");
+    testimonialModalImages.forEach((image) => {
+        image.remove();
+    })
 }
 
 testimonialCards.forEach((card, idx) => {
@@ -43,4 +49,5 @@ testimonialCards.forEach((card, idx) => {
 
 modalCloseButton.addEventListener('click', () => {
     modal.close();
+    removePictures();
 });
