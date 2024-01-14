@@ -16,7 +16,7 @@ const showPictures = (idx) => {
         
         case 1:
             folder = "achrekar";
-            maxLen = 14;
+            maxLen = 12;
             break;
         
         case 2:
