@@ -1358,6 +1358,10 @@ a {
   .e-design-section-content-main-container {
     width: 65%;
   }
+
+  .testimonial-card-modal {
+    max-width: 60%;
+  }
 }
 
 /* Tablet View */
@@ -1730,6 +1734,14 @@ a {
     font-size: 14px;
     text-align: justify;
   }
+
+  .testimonial-card-modal {
+    max-width: 80%;
+  }
+
+  .testimonial-modal-image {
+    width: 80%;
+  }
 }
 
 /* Mobile View */
@@ -1998,5 +2010,10 @@ a {
 
   .steps-section-card {
     width: 100%;
+  }
+
+  .testimonial-card-modal {
+    max-width: 90%;
+    height: 75vh;
   }
 }

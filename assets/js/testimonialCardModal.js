@@ -21,7 +21,7 @@ const showPictures = (idx) => {
         
         case 2:
             folder = "waidande";
-            maxLen = 0;
+            maxLen = 6;
             break;
     }
     
@@ -50,4 +50,18 @@ testimonialCards.forEach((card, idx) => {
 modalCloseButton.addEventListener('click', () => {
     modal.close();
     removePictures();
+});
+
+modal.addEventListener('click', (e) => {
+    const modalDimensions = modal.getBoundingClientRect();
+
+    if (
+        e.clientX < modalDimensions.left ||
+        e.clientX > modalDimensions.right ||
+        e.clientY < modalDimensions.top ||
+        e.clientY > modalDimensions.bottom
+    ) {
+        removePictures();
+        modal.close();
+    }
 });
