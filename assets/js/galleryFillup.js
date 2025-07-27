@@ -5,6 +5,34 @@ const galleryContentMainSection = document.querySelector('.gallery-content-main-
 const baseDir = '/assets/images/testimonials/'
 
 const individuals = {
+    sanap : {
+        dir : 'sanap/',
+        name : 'Popat Sanap',
+        address: 'Shemtambara CHS, Kandivali(W)',
+        rating: 4.5,
+        workCards: {
+            livingRoom: {
+                workDir : 'livingRoom/',
+                cardName : 'Living Room',
+                imageCount : 5
+            },
+            kitchen: {
+                workDir : 'kitchen/',
+                cardName : 'Kitchen',
+                imageCount : 4
+            },
+            masterBedroom: {
+                workDir : 'masterBedroom/',
+                cardName : 'Master Bedroom',
+                imageCount : 4
+            },
+            bedroom: {
+                workDir : 'bedroom/',
+                cardName : 'Bedroom',
+                imageCount : 4
+            }
+        }
+    },
     thakur : {
         dir : 'thakur/',
         name : 'Kavita Thakur',
